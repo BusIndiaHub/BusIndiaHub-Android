@@ -36,6 +36,7 @@ jobs:
         run: |
           mkdir project
           unzip -q "$(find . -maxdepth 1 -name '*.zip' -print -quit)" -d project
+              cp gradle.properties project/gradle.properties
 
       - name: Build APK
         run: |
