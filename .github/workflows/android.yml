@@ -35,7 +35,7 @@ jobs:
       - name: Extract Android Project
         run: |
           mkdir project
-          unzip -q "$(find . -maxdepth 1 -name '*.zip' -print -quit)" -d project
+          unzip -q "$(find . -maxdepth 1 -name '*.zip' -print -quit)" -d projectcp gradle.properties project/gradle.properties
               cp gradle.properties project/gradle.properties
 
       - name: Build APK
